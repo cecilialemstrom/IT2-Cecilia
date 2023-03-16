@@ -1,0 +1,19 @@
+import pygame as pg
+
+pg.init() # starte pygame
+VINDU_BREDDE = 500
+VINDU_HOYDE = 500
+vindu = pg.display.set_mode([VINDU_BREDDE, VINDU_HOYDE]) # lage vindu
+
+fortsett = True
+
+while fortsett:
+    for event in pg.event.get():
+        if event.type == pg.QUIT:
+            fortsett = False
+
+print("Ferdig")
+
+# vindu.fill ((rød, grønn, blå)) # mellom 0-255
+# pg.draw.circle(vindu, (rød, grønn, blå), (x,y), radius)
+# pg.draw.rect(vindu, (rød, grønn, blå), (x, y, bredde, høyde))
